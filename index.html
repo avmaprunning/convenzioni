@@ -6,11 +6,7 @@
   <title>Convenzioni</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body {
-      width: 100%;
-      overflow-x: hidden;
-    }
+    html, body { width: 100%; overflow-x: hidden; }
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
       background: #f0f2f5;
@@ -66,7 +62,6 @@
       margin: 0 auto;
       padding: 1rem 0.75rem;
     }
-
     .toolbar {
       display: flex;
       flex-direction: column;
@@ -83,12 +78,7 @@
       transition: border 0.2s;
     }
     .toolbar input:focus { border-color: #1a237e; }
-
-    #filtri {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-    }
+    #filtri { display: flex; flex-wrap: wrap; gap: 0.4rem; }
     .filtro-btn {
       padding: 0.4rem 0.9rem;
       border-radius: 20px;
@@ -105,12 +95,7 @@
     .filtro-btn:hover { background: #1a237e; color: white; }
 
     /* ── LISTA ── */
-    .lista {
-      display: flex;
-      flex-direction: column;
-      gap: 0.65rem;
-    }
-
+    .lista { display: flex; flex-direction: column; gap: 0.65rem; }
     .card {
       background: white;
       border-radius: 12px;
@@ -122,14 +107,7 @@
       transition: box-shadow 0.15s;
     }
     .card:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.11); }
-
-    .card-left {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      flex: 1;
-      min-width: 0;
-    }
+    .card-left { display: flex; align-items: center; gap: 0.75rem; flex: 1; min-width: 0; }
     .card-cat-badge {
       background: #e8eaf6;
       color: #1a237e;
@@ -143,26 +121,9 @@
       flex-shrink: 0;
     }
     .card-info { min-width: 0; flex: 1; }
-    .card-info h3 {
-      font-size: 0.96rem;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    .card-info .dettagli {
-      font-size: 0.78rem;
-      color: #888;
-      margin-top: 0.12rem;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    .card-right {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      flex-shrink: 0;
-    }
+    .card-info h3 { font-size: 0.96rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .card-info .dettagli { font-size: 0.78rem; color: #888; margin-top: 0.12rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .card-right { display: flex; align-items: center; gap: 0.6rem; flex-shrink: 0; }
     .sconto {
       background: #e8f5e9;
       color: #2e7d32;
@@ -172,21 +133,11 @@
       font-weight: 600;
       white-space: nowrap;
     }
-    .card a {
-      color: #1a237e;
-      font-size: 0.8rem;
-      text-decoration: none;
-      white-space: nowrap;
-    }
+    .card a { color: #1a237e; font-size: 0.8rem; text-decoration: none; white-space: nowrap; }
     .card a:hover { text-decoration: underline; }
 
-    /* ── LOADING / VUOTO ── */
-    .stato {
-      text-align: center;
-      padding: 3rem 1rem;
-      color: #aaa;
-      font-size: 1rem;
-    }
+    /* ── LOADING ── */
+    .stato { text-align: center; padding: 3rem 1rem; color: #aaa; font-size: 1rem; }
     .spinner {
       display: inline-block;
       width: 32px; height: 32px;
@@ -199,37 +150,17 @@
     @keyframes spin { to { transform: rotate(360deg); } }
 
     /* ── SEZIONE ISCRIZIONE ── */
-    #sezione-iscrizione {
-      display: none;
-      max-width: 520px;
-      margin: 1.5rem auto;
-      padding: 0 0.75rem;
-    }
+    #sezione-iscrizione { display: none; max-width: 520px; margin: 1.5rem auto; padding: 0 0.75rem; }
     .form-box {
       background: white;
       border-radius: 16px;
       box-shadow: 0 4px 24px rgba(0,0,0,0.09);
       padding: 1.5rem;
     }
-    .form-box h2 {
-      color: #1a237e;
-      margin-bottom: 0.3rem;
-      font-size: clamp(1.1rem, 4vw, 1.4rem);
-    }
-    .form-box .sottotitolo {
-      color: #777;
-      font-size: 0.88rem;
-      margin-bottom: 1.4rem;
-      line-height: 1.5;
-    }
+    .form-box h2 { color: #1a237e; margin-bottom: 0.3rem; font-size: clamp(1.1rem, 4vw, 1.4rem); }
+    .form-box .sottotitolo { color: #777; font-size: 0.88rem; margin-bottom: 1.4rem; line-height: 1.5; }
     .form-group { margin-bottom: 1rem; }
-    .form-group label {
-      display: block;
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: #444;
-      margin-bottom: 0.3rem;
-    }
+    .form-group label { display: block; font-size: 0.85rem; font-weight: 600; color: #444; margin-bottom: 0.3rem; }
     .form-group input[type="text"],
     .form-group input[type="email"] {
       width: 100%;
@@ -241,7 +172,6 @@
       outline: none;
     }
     .form-group input:focus { border-color: #1a237e; }
-
     .consenso-box {
       display: flex;
       align-items: flex-start;
@@ -251,19 +181,8 @@
       padding: 0.9rem;
       margin-bottom: 1.4rem;
     }
-    .consenso-box input[type="checkbox"] {
-      margin-top: 3px;
-      cursor: pointer;
-      width: 18px; height: 18px;
-      flex-shrink: 0;
-    }
-    .consenso-box label {
-      font-size: 0.82rem;
-      color: #555;
-      line-height: 1.55;
-      cursor: pointer;
-    }
-
+    .consenso-box input[type="checkbox"] { margin-top: 3px; cursor: pointer; width: 18px; height: 18px; flex-shrink: 0; }
+    .consenso-box label { font-size: 0.82rem; color: #555; line-height: 1.55; cursor: pointer; }
     .btn-invia {
       width: 100%;
       padding: 0.9rem;
@@ -278,7 +197,6 @@
     }
     .btn-invia:hover:not(:disabled) { background: #283593; }
     .btn-invia:disabled { background: #bbb; cursor: not-allowed; }
-
     .msg {
       margin-top: 1rem;
       padding: 0.85rem 1rem;
@@ -291,22 +209,11 @@
     .msg.err { background: #ffebee; color: #c62828; }
 
     /* ── FOOTER ── */
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      color: #bbb;
-      font-size: 0.8rem;
-      margin-top: 2rem;
-    }
+    footer { text-align: center; padding: 2rem 1rem; color: #bbb; font-size: 0.8rem; margin-top: 2rem; }
 
     /* ── MOBILE ── */
     @media (max-width: 600px) {
-      .card {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-        padding: 0.85rem;
-      }
+      .card { flex-direction: column; align-items: flex-start; gap: 0.5rem; padding: 0.85rem; }
       .card-left { width: 100%; flex-wrap: wrap; }
       .card-info h3 { white-space: normal; }
       .card-info .dettagli { white-space: normal; overflow: visible; }
@@ -383,29 +290,28 @@
 </footer>
 
 <script>
-  // ─── URL API Apps Script ─────────────────────────────────
+  // ─── URL API Apps Script (solo per form iscrizione) ──────
   const API_URL = "https://script.google.com/macros/s/AKfycbznqbIXqlYTCnNEchfOuccEd2sDrpHMnoh-4gq7dMfNCsZtLaeGG0VLekd8hh2KHLZV-w/exec";
 
   let tuttiServizi = [];
   let catAttiva = "Tutti";
   document.getElementById("anno").textContent = new Date().getFullYear();
 
-  // ─── Carica servizi via fetch ────────────────────────────
-function caricaServizi() {
-  const script = document.createElement("script");
-  script.src = API_URL + "?action=getServizi&callback=riceviServizi";
-  document.head.appendChild(script);
-}
+  // ─── Carica servizi da data.json locale (stesso dominio!) ─
+  fetch("data.json?v=" + Date.now())
+    .then(res => res.json())
+    .then(dati => {
+      tuttiServizi = Array.isArray(dati) ? dati : [];
+      document.getElementById("stato-loading").style.display = "none";
+      document.getElementById("contenuto-convenzioni").style.display = "block";
+      costruisciCategorie();
+      renderLista(tuttiServizi);
+    })
+    .catch(() => {
+      document.getElementById("stato-loading").innerHTML =
+        '<p style="color:#e53935">Dati non ancora disponibili. Riprova tra qualche minuto.</p>';
+    });
 
-function riceviServizi(dati) {
-  tuttiServizi = Array.isArray(dati) ? dati : [];
-  document.getElementById("stato-loading").style.display = "none";
-  document.getElementById("contenuto-convenzioni").style.display = "block";
-  costruisciCategorie();
-  renderLista(tuttiServizi);
-}
-
-caricaServizi();
   // ─── Categorie dinamiche ─────────────────────────────────
   function costruisciCategorie() {
     const cats = [...new Set(tuttiServizi.map(s => s["Categoria"]).filter(Boolean))].sort();
@@ -420,7 +326,6 @@ caricaServizi();
     });
   }
 
-  // ─── Filtro categoria ────────────────────────────────────
   function filtra(cat, btn) {
     catAttiva = cat;
     document.querySelectorAll(".filtro-btn").forEach(b => b.classList.remove("active"));
@@ -428,7 +333,6 @@ caricaServizi();
     applicaFiltri();
   }
 
-  // ─── Ricerca + filtro ────────────────────────────────────
   function applicaFiltri() {
     const q = document.getElementById("search").value.toLowerCase().trim();
     const filtrati = tuttiServizi.filter(s => {
@@ -445,7 +349,6 @@ caricaServizi();
 
   document.getElementById("search").addEventListener("input", applicaFiltri);
 
-  // ─── Render lista ────────────────────────────────────────
   function renderLista(lista) {
     const el = document.getElementById("lista");
     const nessuno = document.getElementById("nessun-risultato");
@@ -476,7 +379,6 @@ caricaServizi();
     `).join("");
   }
 
-  // ─── Escape HTML ─────────────────────────────────────────
   function esc(str) {
     return (str || "")
       .replace(/&/g,"&amp;")
@@ -485,7 +387,6 @@ caricaServizi();
       .replace(/"/g,"&quot;");
   }
 
-  // ─── Cambio sezione ──────────────────────────────────────
   function mostraSezione(quale, btn) {
     document.getElementById("sezione-convenzioni").style.display =
       quale === "convenzioni" ? "block" : "none";
@@ -495,7 +396,7 @@ caricaServizi();
     btn.classList.add("active");
   }
 
-  // ─── Invio form ──────────────────────────────────────────
+  // ─── Invio form via JSONP (nessun CORS) ──────────────────
   function invia() {
     const nome     = document.getElementById("nome").value.trim();
     const cognome  = document.getElementById("cognome").value.trim();
@@ -517,15 +418,18 @@ caricaServizi();
     btn.textContent = "Invio in corso...";
     document.getElementById("msg").style.display = "none";
 
+    // Usa JSONP per evitare CORS
+    const callbackName = "cb_" + Date.now();
     const params = new URLSearchParams({
       action: "registraIscritto",
       nome, cognome, email,
-      consenso: consenso ? "SI" : "NO"
+      consenso: "SI",
+      callback: callbackName
     });
 
-    fetch(API_URL + "?" + params.toString())
-    .then(res => res.json())
-    .then(res => {
+    window[callbackName] = function(res) {
+      delete window[callbackName];
+      document.head.removeChild(script);
       btn.disabled = false;
       btn.textContent = "Invia richiesta";
       mostraMsg(res.messaggio, res.successo);
@@ -535,12 +439,17 @@ caricaServizi();
         document.getElementById("email").value      = "";
         document.getElementById("consenso").checked = false;
       }
-    })
-    .catch(() => {
+    };
+
+    const script = document.createElement("script");
+    script.src = API_URL + "?" + params.toString();
+    script.onerror = function() {
+      delete window[callbackName];
       btn.disabled = false;
       btn.textContent = "Invia richiesta";
       mostraMsg("Errore di sistema. Riprova più tardi.", false);
-    });
+    };
+    document.head.appendChild(script);
   }
 
   function mostraMsg(testo, ok) {
