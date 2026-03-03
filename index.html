@@ -516,13 +516,13 @@
     btn.textContent = "Invio in corso...";
     document.getElementById("msg").style.display = "none";
 
-    fetch(API_URL, {
-      method: "POST",
-      body: JSON.stringify({
-        action: "registraIscritto",
-        nome, cognome, email, consenso
-      })
-    })
+    const params = new URLSearchParams({
+      action: "registraIscritto",
+      nome, cognome, email,
+      consenso: consenso ? "SI" : "NO"
+    });
+
+    fetch(API_URL + "?" + params.toString())
     .then(res => res.json())
     .then(res => {
       btn.disabled = false;
