@@ -391,20 +391,21 @@
   document.getElementById("anno").textContent = new Date().getFullYear();
 
   // ─── Carica servizi via fetch ────────────────────────────
-  fetch(API_URL + "?action=getServizi")
-    .then(res => res.json())
-    .then(dati => {
-      tuttiServizi = Array.isArray(dati) ? dati : [];
-      document.getElementById("stato-loading").style.display = "none";
-      document.getElementById("contenuto-convenzioni").style.display = "block";
-      costruisciCategorie();
-      renderLista(tuttiServizi);
-    })
-    .catch(() => {
-      document.getElementById("stato-loading").innerHTML =
-        '<p style="color:#e53935">Errore nel caricamento. Riprova più tardi.</p>';
-    });
+function caricaServizi() {
+  const script = document.createElement("script");
+  script.src = API_URL + "?action=getServizi&callback=riceviServizi";
+  document.head.appendChild(script);
+}
 
+function riceviServizi(dati) {
+  tuttiServizi = Array.isArray(dati) ? dati : [];
+  document.getElementById("stato-loading").style.display = "none";
+  document.getElementById("contenuto-convenzioni").style.display = "block";
+  costruisciCategorie();
+  renderLista(tuttiServizi);
+}
+
+caricaServizi();
   // ─── Categorie dinamiche ─────────────────────────────────
   function costruisciCategorie() {
     const cats = [...new Set(tuttiServizi.map(s => s["Categoria"]).filter(Boolean))].sort();
