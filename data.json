@@ -60,6 +60,16 @@
     "Attivo": "SI"
   },
   {
+    "Nome Locale": "Enobar Romae",
+    "Categoria": "Bar",
+    "Indirizzo": "Via Edouard Aubert,28",
+    "Città": "Aosta",
+    "Telefono": "331727733",
+    "Descrizione Sconto": "",
+    "Sito Web": "https://www.facebook.com/enobaromaenzo/",
+    "Attivo": "SI"
+  },
+  {
     "Nome Locale": "Emporio dell'Auto",
     "Categoria": "Autovetture",
     "Indirizzo": "Via Giuseppe Mazzini, 6",
@@ -137,6 +147,16 @@
     "Telefono": "366 746 1796",
     "Descrizione Sconto": "",
     "Sito Web": "https://www.facebook.com/parrucchiera.bidesesabrina/?ref=bookmarks",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Perret Jean Paul",
+    "Categoria": "Nutrizionista ",
+    "Indirizzo": "Località Grand Chemin, 93",
+    "Città": "Saint Christophe ",
+    "Telefono": "3408836130",
+    "Descrizione Sconto": "",
+    "Sito Web": "",
     "Attivo": "SI"
   },
   {
