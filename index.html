@@ -232,9 +232,14 @@
     const emailSafe = email.replace(/[^a-z0-9]/gi, "_");
     const params    = new URLSearchParams({ action: "registraIscritto", nome, cognome, email, consenso: "SI", ts });
 
-    // Triggera Apps Script tramite img (non soggetto a CORB)
-    const img = new Image();
-    img.src = API_URL + "?" + params.toString();
+// Triggera Apps Script tramite iframe nascosto
+const iframe = document.createElement("iframe");
+iframe.style.display = "none";
+iframe.src = API_URL + "?" + params.toString();
+document.body.appendChild(iframe);
+setTimeout(() => { 
+  try { document.body.removeChild(iframe); } catch(e) {} 
+}, 10000);
 
     // Polling su GitHub per leggere la risposta scritta da Apps Script
     const githubUrl = GITHUB_RAW + "risposte/r_" + emailSafe + "_" + ts + ".json";
