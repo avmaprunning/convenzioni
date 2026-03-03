@@ -6,25 +6,549 @@
   <title>Convenzioni</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     html, body {
       width: 100%;
-      height: 100%;
-      overflow: hidden;
+      overflow-x: hidden;
     }
-    iframe {
-      position: fixed;
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f0f2f5;
+      color: #333;
+      min-height: 100vh;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+      color: white;
+      text-align: center;
+      padding: 1.8rem 1rem 1.5rem;
+    }
+    header h1 { font-size: clamp(1.3rem, 5vw, 1.9rem); margin-bottom: 0.4rem; }
+    header p  { opacity: 0.82; font-size: clamp(0.82rem, 3vw, 0.97rem); }
+
+    /* ── NAV ── */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 0.6rem;
+      background: white;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid #e0e0e0;
+      flex-wrap: wrap;
+      position: sticky;
       top: 0;
-      left: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .nav-btn {
+      padding: 0.55rem 1.2rem;
+      border-radius: 25px;
+      border: 2px solid #1a237e;
+      background: white;
+      color: #1a237e;
+      cursor: pointer;
+      font-size: clamp(0.82rem, 3vw, 0.93rem);
+      font-weight: 600;
+      transition: all 0.2s;
+      flex: 1;
+      max-width: 200px;
+      text-align: center;
+    }
+    .nav-btn.active,
+    .nav-btn:hover { background: #1a237e; color: white; }
+
+    /* ── SEZIONE CONVENZIONI ── */
+    #sezione-convenzioni {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 1rem 0.75rem;
+    }
+
+    .toolbar {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-bottom: 1rem;
+    }
+    .toolbar input {
       width: 100%;
-      height: 100%;
+      padding: 0.65rem 1rem;
+      border: 1.5px solid #ddd;
+      border-radius: 25px;
+      font-size: 1rem;
+      outline: none;
+      transition: border 0.2s;
+    }
+    .toolbar input:focus { border-color: #1a237e; }
+
+    #filtri {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .filtro-btn {
+      padding: 0.4rem 0.9rem;
+      border-radius: 20px;
+      border: 1.5px solid #1a237e;
+      background: white;
+      color: #1a237e;
+      cursor: pointer;
+      font-size: 0.82rem;
+      font-weight: 600;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .filtro-btn.active,
+    .filtro-btn:hover { background: #1a237e; color: white; }
+
+    /* ── LISTA ── */
+    .lista {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      padding: 0.9rem 1.1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      transition: box-shadow 0.15s;
+    }
+    .card:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.11); }
+
+    .card-left {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex: 1;
+      min-width: 0;
+    }
+    .card-cat-badge {
+      background: #e8eaf6;
+      color: #1a237e;
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      border-radius: 20px;
+      padding: 0.25rem 0.6rem;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .card-info { min-width: 0; flex: 1; }
+    .card-info h3 {
+      font-size: 0.96rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .card-info .dettagli {
+      font-size: 0.78rem;
+      color: #888;
+      margin-top: 0.12rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .card-right {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-shrink: 0;
+    }
+    .sconto {
+      background: #e8f5e9;
+      color: #2e7d32;
+      border-radius: 8px;
+      padding: 0.28rem 0.65rem;
+      font-size: 0.83rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .card a {
+      color: #1a237e;
+      font-size: 0.8rem;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .card a:hover { text-decoration: underline; }
+
+    /* ── LOADING / VUOTO ── */
+    .stato {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: #aaa;
+      font-size: 1rem;
+    }
+    .spinner {
+      display: inline-block;
+      width: 32px; height: 32px;
+      border: 3px solid #e0e0e0;
+      border-top-color: #1a237e;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin-bottom: 0.8rem;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── SEZIONE ISCRIZIONE ── */
+    #sezione-iscrizione {
+      display: none;
+      max-width: 520px;
+      margin: 1.5rem auto;
+      padding: 0 0.75rem;
+    }
+    .form-box {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+      padding: 1.5rem;
+    }
+    .form-box h2 {
+      color: #1a237e;
+      margin-bottom: 0.3rem;
+      font-size: clamp(1.1rem, 4vw, 1.4rem);
+    }
+    .form-box .sottotitolo {
+      color: #777;
+      font-size: 0.88rem;
+      margin-bottom: 1.4rem;
+      line-height: 1.5;
+    }
+    .form-group { margin-bottom: 1rem; }
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #444;
+      margin-bottom: 0.3rem;
+    }
+    .form-group input[type="text"],
+    .form-group input[type="email"] {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1.5px solid #ddd;
+      border-radius: 10px;
+      font-size: 1rem;
+      transition: border 0.2s;
+      outline: none;
+    }
+    .form-group input:focus { border-color: #1a237e; }
+
+    .consenso-box {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.7rem;
+      background: #f5f5f5;
+      border-radius: 10px;
+      padding: 0.9rem;
+      margin-bottom: 1.4rem;
+    }
+    .consenso-box input[type="checkbox"] {
+      margin-top: 3px;
+      cursor: pointer;
+      width: 18px; height: 18px;
+      flex-shrink: 0;
+    }
+    .consenso-box label {
+      font-size: 0.82rem;
+      color: #555;
+      line-height: 1.55;
+      cursor: pointer;
+    }
+
+    .btn-invia {
+      width: 100%;
+      padding: 0.9rem;
+      background: #1a237e;
+      color: white;
       border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-invia:hover:not(:disabled) { background: #283593; }
+    .btn-invia:disabled { background: #bbb; cursor: not-allowed; }
+
+    .msg {
+      margin-top: 1rem;
+      padding: 0.85rem 1rem;
+      border-radius: 10px;
+      font-size: 0.9rem;
+      text-align: center;
+      display: none;
+    }
+    .msg.ok  { background: #e8f5e9; color: #2e7d32; }
+    .msg.err { background: #ffebee; color: #c62828; }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #bbb;
+      font-size: 0.8rem;
+      margin-top: 2rem;
+    }
+
+    /* ── MOBILE ── */
+    @media (max-width: 600px) {
+      .card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 0.85rem;
+      }
+      .card-left { width: 100%; flex-wrap: wrap; }
+      .card-info h3 { white-space: normal; }
+      .card-info .dettagli { white-space: normal; overflow: visible; }
+      .card-right { width: 100%; flex-wrap: wrap; }
+      .sconto { white-space: normal; }
+      .form-box { padding: 1.2rem; }
     }
   </style>
 </head>
 <body>
-  <iframe
-    src="https://script.google.com/macros/s/AKfycbznqbIXqlYTCnNEchfOuccEd2sDrpHMnoh-4gq7dMfNCsZtLaeGG0VLekd8hh2KHLZV-w/exec"
-    allowfullscreen>
-  </iframe>
+
+<header>
+  <h1>🎫 Circuito Convenzionato</h1>
+  <p>Vantaggi esclusivi per i soci della nostra associazione</p>
+</header>
+
+<nav>
+  <button class="nav-btn active" onclick="mostraSezione('convenzioni', this)">🏪 Le Convenzioni</button>
+  <button class="nav-btn" onclick="mostraSezione('iscrizione', this)">✍️ Richiedi la Tessera</button>
+</nav>
+
+<!-- ═══════════ CONVENZIONI ═══════════ -->
+<div id="sezione-convenzioni">
+  <div id="stato-loading" class="stato">
+    <div class="spinner"></div><br>Caricamento convenzioni...
+  </div>
+  <div id="contenuto-convenzioni" style="display:none">
+    <div class="toolbar">
+      <input type="text" id="search" placeholder="🔍 Cerca locale, città, sconto...">
+      <div id="filtri">
+        <button class="filtro-btn active" data-cat="Tutti" onclick="filtra('Tutti', this)">Tutti</button>
+      </div>
+    </div>
+    <div class="lista" id="lista"></div>
+    <div id="nessun-risultato" class="stato" style="display:none">Nessun risultato trovato.</div>
+  </div>
+</div>
+
+<!-- ═══════════ ISCRIZIONE ═══════════ -->
+<div id="sezione-iscrizione">
+  <div class="form-box">
+    <h2>Richiedi la tua tessera</h2>
+    <p class="sottotitolo">
+      Compila il modulo qui sotto. La tessera si ritira fisicamente presso la nostra sede —
+      ti invieremo una email di conferma.
+    </p>
+    <div class="form-group">
+      <label for="nome">Nome *</label>
+      <input type="text" id="nome" placeholder="Mario" autocomplete="given-name">
+    </div>
+    <div class="form-group">
+      <label for="cognome">Cognome *</label>
+      <input type="text" id="cognome" placeholder="Rossi" autocomplete="family-name">
+    </div>
+    <div class="form-group">
+      <label for="email">Indirizzo email *</label>
+      <input type="email" id="email" placeholder="mario.rossi@email.com" autocomplete="email">
+    </div>
+    <div class="consenso-box">
+      <input type="checkbox" id="consenso">
+      <label for="consenso">
+        Acconsento al trattamento dei miei dati personali (nome, cognome, email)
+        ai sensi del Regolamento UE 2016/679 (GDPR) per la gestione della tessera associativa.
+        I dati non saranno ceduti a terzi e potranno essere cancellati su richiesta.
+      </label>
+    </div>
+    <button class="btn-invia" id="btn-invia" onclick="invia()">Invia richiesta</button>
+    <div class="msg" id="msg"></div>
+  </div>
+</div>
+
+<footer>
+  &copy; <span id="anno"></span> La Tua Associazione &mdash; Tutti i diritti riservati
+</footer>
+
+<script>
+  // ─── URL API Apps Script ─────────────────────────────────
+  const API_URL = "https://script.google.com/macros/s/AKfycbznqbIXqlYTCnNEchfOuccEd2sDrpHMnoh-4gq7dMfNCsZtLaeGG0VLekd8hh2KHLZV-w/exec";
+
+  let tuttiServizi = [];
+  let catAttiva = "Tutti";
+  document.getElementById("anno").textContent = new Date().getFullYear();
+
+  // ─── Carica servizi via fetch ────────────────────────────
+  fetch(API_URL + "?action=getServizi")
+    .then(res => res.json())
+    .then(dati => {
+      tuttiServizi = Array.isArray(dati) ? dati : [];
+      document.getElementById("stato-loading").style.display = "none";
+      document.getElementById("contenuto-convenzioni").style.display = "block";
+      costruisciCategorie();
+      renderLista(tuttiServizi);
+    })
+    .catch(() => {
+      document.getElementById("stato-loading").innerHTML =
+        '<p style="color:#e53935">Errore nel caricamento. Riprova più tardi.</p>';
+    });
+
+  // ─── Categorie dinamiche ─────────────────────────────────
+  function costruisciCategorie() {
+    const cats = [...new Set(tuttiServizi.map(s => s["Categoria"]).filter(Boolean))].sort();
+    const filtriEl = document.getElementById("filtri");
+    cats.forEach(cat => {
+      const btn = document.createElement("button");
+      btn.className = "filtro-btn";
+      btn.textContent = cat;
+      btn.dataset.cat = cat;
+      btn.addEventListener("click", function() { filtra(cat, this); });
+      filtriEl.appendChild(btn);
+    });
+  }
+
+  // ─── Filtro categoria ────────────────────────────────────
+  function filtra(cat, btn) {
+    catAttiva = cat;
+    document.querySelectorAll(".filtro-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    applicaFiltri();
+  }
+
+  // ─── Ricerca + filtro ────────────────────────────────────
+  function applicaFiltri() {
+    const q = document.getElementById("search").value.toLowerCase().trim();
+    const filtrati = tuttiServizi.filter(s => {
+      const matchCat = catAttiva === "Tutti" || s["Categoria"] === catAttiva;
+      const matchQ = !q ||
+        (s["Nome Locale"]        || "").toLowerCase().includes(q) ||
+        (s["Città"]              || "").toLowerCase().includes(q) ||
+        (s["Descrizione Sconto"] || "").toLowerCase().includes(q) ||
+        (s["Indirizzo"]          || "").toLowerCase().includes(q);
+      return matchCat && matchQ;
+    });
+    renderLista(filtrati);
+  }
+
+  document.getElementById("search").addEventListener("input", applicaFiltri);
+
+  // ─── Render lista ────────────────────────────────────────
+  function renderLista(lista) {
+    const el = document.getElementById("lista");
+    const nessuno = document.getElementById("nessun-risultato");
+    if (lista.length === 0) {
+      el.innerHTML = "";
+      nessuno.style.display = "block";
+      return;
+    }
+    nessuno.style.display = "none";
+    el.innerHTML = lista.map(s => `
+      <div class="card">
+        <div class="card-left">
+          <span class="card-cat-badge">${esc(s["Categoria"])}</span>
+          <div class="card-info">
+            <h3>${esc(s["Nome Locale"])}</h3>
+            <div class="dettagli">
+              📍 ${esc(s["Indirizzo"])}, ${esc(s["Città"])}
+              &nbsp;·&nbsp;
+              📞 ${esc(s["Telefono"])}
+            </div>
+          </div>
+        </div>
+        <div class="card-right">
+          <div class="sconto">🎁 ${esc(s["Descrizione Sconto"])}</div>
+          ${s["Sito Web"] ? `<a href="${esc(s["Sito Web"])}" target="_blank" rel="noopener">🌐 Sito</a>` : ""}
+        </div>
+      </div>
+    `).join("");
+  }
+
+  // ─── Escape HTML ─────────────────────────────────────────
+  function esc(str) {
+    return (str || "")
+      .replace(/&/g,"&amp;")
+      .replace(/</g,"&lt;")
+      .replace(/>/g,"&gt;")
+      .replace(/"/g,"&quot;");
+  }
+
+  // ─── Cambio sezione ──────────────────────────────────────
+  function mostraSezione(quale, btn) {
+    document.getElementById("sezione-convenzioni").style.display =
+      quale === "convenzioni" ? "block" : "none";
+    document.getElementById("sezione-iscrizione").style.display =
+      quale === "iscrizione" ? "block" : "none";
+    document.querySelectorAll(".nav-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+  }
+
+  // ─── Invio form ──────────────────────────────────────────
+  function invia() {
+    const nome     = document.getElementById("nome").value.trim();
+    const cognome  = document.getElementById("cognome").value.trim();
+    const email    = document.getElementById("email").value.trim();
+    const consenso = document.getElementById("consenso").checked;
+
+    if (!nome || !cognome || !email) {
+      mostraMsg("Compila tutti i campi obbligatori.", false); return;
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      mostraMsg("Inserisci un indirizzo email valido.", false); return;
+    }
+    if (!consenso) {
+      mostraMsg("Devi accettare il consenso al trattamento dei dati.", false); return;
+    }
+
+    const btn = document.getElementById("btn-invia");
+    btn.disabled = true;
+    btn.textContent = "Invio in corso...";
+    document.getElementById("msg").style.display = "none";
+
+    fetch(API_URL, {
+      method: "POST",
+      body: JSON.stringify({
+        action: "registraIscritto",
+        nome, cognome, email, consenso
+      })
+    })
+    .then(res => res.json())
+    .then(res => {
+      btn.disabled = false;
+      btn.textContent = "Invia richiesta";
+      mostraMsg(res.messaggio, res.successo);
+      if (res.successo) {
+        document.getElementById("nome").value       = "";
+        document.getElementById("cognome").value    = "";
+        document.getElementById("email").value      = "";
+        document.getElementById("consenso").checked = false;
+      }
+    })
+    .catch(() => {
+      btn.disabled = false;
+      btn.textContent = "Invia richiesta";
+      mostraMsg("Errore di sistema. Riprova più tardi.", false);
+    });
+  }
+
+  function mostraMsg(testo, ok) {
+    const el = document.getElementById("msg");
+    el.textContent   = testo;
+    el.className     = "msg " + (ok ? "ok" : "err");
+    el.style.display = "block";
+    el.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }
+</script>
 </body>
 </html>
