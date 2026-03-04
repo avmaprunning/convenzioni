@@ -130,6 +130,16 @@
     "Attivo": "SI"
   },
   {
+    "Nome Locale": "L'Osteria",
+    "Categoria": "Ristorante",
+    "Indirizzo": "via Porta Pretoria, 13",
+    "Città": "Aosta",
+    "Telefono": "16540111",
+    "Descrizione Sconto": "",
+    "Sito Web": "https://losteria.aosta.it/",
+    "Attivo": "SI"
+  },
+  {
     "Nome Locale": "Palestra Disval",
     "Categoria": "Fitness",
     "Indirizzo": "Via Maurice Garin, 1",
