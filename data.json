@@ -40,6 +40,16 @@
     "Attivo": "SI"
   },
   {
+    "Nome Locale": "Distort Corrado ",
+    "Categoria": "Massaggiatore",
+    "Indirizzo": "Via Cesare Battisti, 14",
+    "Città": "Aosta",
+    "Telefono": "3497023191",
+    "Descrizione Sconto": "Sconto 20%",
+    "Sito Web": "",
+    "Attivo": "SI"
+  },
+  {
     "Nome Locale": "Doceo Performance Lab",
     "Categoria": "Fisioterapisti",
     "Indirizzo": "Via Esperanto, 2",
@@ -173,7 +183,7 @@
     "Nome Locale": "Piscina di Variney",
     "Categoria": "Sport",
     "Indirizzo": "Località frazione chez Roncoz",
-    "Città": "Aosta",
+    "Città": "Gignod",
     "Telefono": "0165238299",
     "Descrizione Sconto": "",
     "Sito Web": "https://www.piscinavariney.it/",
