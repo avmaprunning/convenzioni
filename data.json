@@ -4,7 +4,7 @@
     "Categoria": "Autovetture",
     "Indirizzo": "Via Circonvallazione Sud 53/55",
     "Città": "Nus",
-    "Telefono": "165767984",
+    "Telefono": "0165767984",
     "Descrizione Sconto": "Sconto 5% su ricarica tessera",
     "Sito Web": "https://contozcombustibili.com",
     "Attivo": "SI"
@@ -14,7 +14,7 @@
     "Categoria": "Osteopata",
     "Indirizzo": "Via Laurent Martinet, 33",
     "Città": "Aosta",
-    "Telefono": "349 432 5549",
+    "Telefono": "3494325549",
     "Descrizione Sconto": "Sconto 15%",
     "Sito Web": "http://www.ambracorolla.com/",
     "Attivo": "SI"
@@ -24,7 +24,7 @@
     "Categoria": "Autovetture",
     "Indirizzo": "Località Les Iles, 14,",
     "Città": "Pollein",
-    "Telefono": "0165 53175",
+    "Telefono": "016553175",
     "Descrizione Sconto": "Buono pulizia ",
     "Sito Web": "https://www.carrozzeriacrisafiaosta.com/",
     "Attivo": "SI"
@@ -54,7 +54,7 @@
     "Categoria": "Fisioterapisti",
     "Indirizzo": "Via Esperanto, 2",
     "Città": "Aosta",
-    "Telefono": "347 580 5756",
+    "Telefono": "3475805756",
     "Descrizione Sconto": "Sconto 20%(1a)-10% ",
     "Sito Web": "https://doceocenter.it/",
     "Attivo": "SI"
@@ -64,7 +64,7 @@
     "Categoria": "Abbigliamento",
     "Indirizzo": "Frazione Plan Felinaz, 29",
     "Città": "Charvensod",
-    "Telefono": "338 300 6891",
+    "Telefono": "3383006891",
     "Descrizione Sconto": "",
     "Sito Web": "https://domesport.it",
     "Attivo": "SI"
@@ -84,7 +84,7 @@
     "Categoria": "Autovetture",
     "Indirizzo": "Via Giuseppe Mazzini, 6",
     "Città": "Aosta",
-    "Telefono": "0165 41051",
+    "Telefono": "016541051",
     "Descrizione Sconto": "",
     "Sito Web": "http://www.emporiodellautoaosta.com/",
     "Attivo": "SI"
@@ -94,7 +94,7 @@
     "Categoria": "Servizi",
     "Indirizzo": "Via festaz, 88",
     "Città": "Aosta",
-    "Telefono": "0165 41002",
+    "Telefono": "016541002",
     "Descrizione Sconto": "",
     "Sito Web": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjQp_-lmf-SAxVx6wIHHXx0IQMQgU96BAghEAQ&url=https%3A%2F%2Fwww.generali.it%2Ftrova-agenzia%2F&usg=AOvVaw09SEKPKlPuHeyRHGn1QwVF&opi=89978449",
     "Attivo": "SI"
@@ -112,9 +112,9 @@
   {
     "Nome Locale": "Glarey Irene",
     "Categoria": "Massaggiatore",
-    "Indirizzo": "",
-    "Città": "",
-    "Telefono": "",
+    "Indirizzo": "Località Grand Chemin 93",
+    "Città": "Saint Christophe",
+    "Telefono": "3452888224",
     "Descrizione Sconto": "Sconto 20%",
     "Sito Web": "https://setup.vda.it",
     "Attivo": "SI"
@@ -124,7 +124,7 @@
     "Categoria": "Svago",
     "Indirizzo": "Località Zerbio, 1",
     "Città": "Pontey",
-    "Telefono": "351 743 0017",
+    "Telefono": "3517430017",
     "Descrizione Sconto": "",
     "Sito Web": "http://www.laquercia58.com/",
     "Attivo": "SI"
@@ -134,7 +134,7 @@
     "Categoria": "Parrucchiera",
     "Indirizzo": "Corso Lancieri di Aosta, 2",
     "Città": "Aosta",
-    "Telefono": "351 403 2528",
+    "Telefono": "3514032528",
     "Descrizione Sconto": "Sconto 10%(>25 euro)",
     "Sito Web": "https://www.facebook.com/p/Le-Chignon-Hair-Salon-61569385670977/",
     "Attivo": "SI"
@@ -144,7 +144,7 @@
     "Categoria": "Ristorante",
     "Indirizzo": "via Porta Pretoria, 13",
     "Città": "Aosta",
-    "Telefono": "16540111",
+    "Telefono": "016540111",
     "Descrizione Sconto": "",
     "Sito Web": "https://losteria.aosta.it/",
     "Attivo": "SI"
@@ -164,7 +164,7 @@
     "Categoria": "Parrucchiera",
     "Indirizzo": "Corso battaglione Aosta, 191",
     "Città": "AOSTA",
-    "Telefono": "366 746 1796",
+    "Telefono": "3667461796",
     "Descrizione Sconto": "",
     "Sito Web": "https://www.facebook.com/parrucchiera.bidesesabrina/?ref=bookmarks",
     "Attivo": "SI"
@@ -204,8 +204,8 @@
     "Categoria": "Dermatologo",
     "Indirizzo": "Rue de la Maladière, 31",
     "Città": "Saint Christophe",
-    "Telefono": "335 573 4986",
-    "Descrizione Sconto": "10% su Crioterapia",
+    "Telefono": "3355734986",
+    "Descrizione Sconto": "Sconto 10% su Crioterapia",
     "Sito Web": "https://stefanoveglio.com/",
     "Attivo": "SI"
   }
