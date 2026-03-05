@@ -1,5 +1,15 @@
 [
   {
+    "Nome Locale": "Centro Fitness Naturalia e Centro estetico Raggio di Sole di Nancy Raffa",
+    "Categoria": "Fitness",
+    "Indirizzo": "Regione Tzambarlet, 13",
+    "Città": "Aosta",
+    "Telefono": "3482223033",
+    "Descrizione Sconto": "5% sconto sui pacchetti fitness",
+    "Sito Web": "http://www.centrobenesserenaturalia-aosta.it/",
+    "Attivo": "SI"
+  },
+  {
     "Nome Locale": "Contoz Carburanti",
     "Categoria": "Autovetture",
     "Indirizzo": "Via Circonvallazione Sud 53/55",
@@ -145,7 +155,7 @@
     "Indirizzo": "via Porta Pretoria, 13",
     "Città": "Aosta",
     "Telefono": "016540111",
-    "Descrizione Sconto": "",
+    "Descrizione Sconto": "Sconto 15%",
     "Sito Web": "https://losteria.aosta.it/",
     "Attivo": "SI"
   },
@@ -187,6 +197,16 @@
     "Telefono": "0165238299",
     "Descrizione Sconto": "",
     "Sito Web": "https://www.piscinavariney.it/",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Profumeria Pivot",
+    "Categoria": "Profumeria ",
+    "Indirizzo": "via de Tillier, 24",
+    "Città": "Aosta",
+    "Telefono": "016535774",
+    "Descrizione Sconto": "10% di sconto con 25€ di spesa",
+    "Sito Web": "",
     "Attivo": "SI"
   },
   {
