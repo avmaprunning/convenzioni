@@ -268,5 +268,15 @@
     "Descrizione Sconto": "Sconto 10% su Crioterapia",
     "Sito Web": "https://stefanoveglio.com/",
     "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Yogorino Aosta",
+    "Categoria": "Alimenti",
+    "Indirizzo": "Via Hotel des Etats, 1",
+    "Città": "Aosta",
+    "Telefono": "",
+    "Descrizione Sconto": "Sconto 25% su spesa minima di 25€",
+    "Sito Web": "www.facebook.com/yogorinoaosta",
+    "Attivo": "SI"
   }
 ]
