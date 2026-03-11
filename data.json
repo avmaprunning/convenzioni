@@ -120,16 +120,6 @@
     "Attivo": "SI"
   },
   {
-    "Nome Locale": "Giada Macrì",
-    "Categoria": "Nutrizionista",
-    "Indirizzo": "Frazione Borettaz 7",
-    "Città": "Gressan ",
-    "Telefono": "3791988503",
-    "Descrizione Sconto": "Sconto 1a seduta",
-    "Sito Web": "https://nutrizionistagiadamacri.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcAQSuk5leHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaeCSCn81YD5HB3BSvZH3xJxbQKd6_Ae4almx-SkNRCFh-g9uYlynNrZwdB7Xw_aem_BABnayMOnxJP2exbBV6RhA",
-    "Attivo": "SI"
-  },
-  {
     "Nome Locale": "Glarey Irene",
     "Categoria": "Massaggiatore",
     "Indirizzo": "Località Grand Chemin 93",
@@ -177,6 +167,26 @@
     "Telefono": "016540111",
     "Descrizione Sconto": "Sconto 15%",
     "Sito Web": "https://losteria.aosta.it/",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Macrì Giada",
+    "Categoria": "Nutrizionista",
+    "Indirizzo": "Frazione Borettaz 7",
+    "Città": "Gressan ",
+    "Telefono": "3791988503",
+    "Descrizione Sconto": "Sconto 1a seduta",
+    "Sito Web": "https://nutrizionistagiadamacri.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcAQSuk5leHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaeCSCn81YD5HB3BSvZH3xJxbQKd6_Ae4almx-SkNRCFh-g9uYlynNrZwdB7Xw_aem_BABnayMOnxJP2exbBV6RhA",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Macrì Francesco",
+    "Categoria": "Nutrizionista",
+    "Indirizzo": "Corso Saint Martin de Corléans",
+    "Città": "Aosta",
+    "Telefono": "3791214577",
+    "Descrizione Sconto": "Sconto 20%",
+    "Sito Web": "www.dottfrancescomacri.it",
     "Attivo": "SI"
   },
   {
