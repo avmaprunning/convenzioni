@@ -245,8 +245,18 @@
     "Indirizzo": "via de Tillier, 24",
     "Città": "Aosta",
     "Telefono": "016535774",
-    "Descrizione Sconto": "Sconto10% con 25€ di spesa",
+    "Descrizione Sconto": "Sconto 10% con 25€ di spesa",
     "Sito Web": "",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Roshi House",
+    "Categoria": "Ristorante ",
+    "Indirizzo": "Viale Conseils des Commis 10",
+    "Città": "Aosta",
+    "Telefono": "3485475552",
+    "Descrizione Sconto": "Sconto 10% il martedì sera",
+    "Sito Web": "https://roshihouse.com/",
     "Attivo": "SI"
   },
   {
