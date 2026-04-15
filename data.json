@@ -1,7 +1,7 @@
 [
   {
     "Nome Locale": "Biazzetti Davide",
-    "Categoria": "Fisioterapista ",
+    "Categoria": "Fisioterapisti",
     "Indirizzo": "",
     "Città": "",
     "Telefono": "3402537005",
@@ -157,6 +157,16 @@
     "Telefono": "3514032528",
     "Descrizione Sconto": "Sconto 10% (>25 euro)",
     "Sito Web": "https://www.facebook.com/p/Le-Chignon-Hair-Salon-61569385670977/",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Les Bières du Grand Saint Bernard ",
+    "Categoria": "Bevande ",
+    "Indirizzo": "località Croix Noire, 45",
+    "Città": "Saint Christophe ",
+    "Telefono": "",
+    "Descrizione Sconto": "Sconto 15% sull'acquisto di confezioni di birra da 12 bottiglie o 24 lattine c/o La Clavalité",
+    "Sito Web": "",
     "Attivo": "SI"
   },
   {
