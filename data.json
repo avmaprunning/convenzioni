@@ -150,6 +150,16 @@
     "Attivo": "SI"
   },
   {
+    "Nome Locale": "Il Grullaio - tigelle e gnocco fritto",
+    "Categoria": "Ristorante",
+    "Indirizzo": "Loc. Crestellaz",
+    "Città": "Donnas",
+    "Telefono": "3485654980-3466080428",
+    "Descrizione Sconto": "Sconto 10% su pranzi e cene",
+    "Sito Web": "",
+    "Attivo": "SI"
+  },
+  {
     "Nome Locale": "La Quercia 58",
     "Categoria": "Svago",
     "Indirizzo": "Località Zerbio, 1",
@@ -281,7 +291,7 @@
   },
   {
     "Nome Locale": "Roshi House",
-    "Categoria": "Ristorante ",
+    "Categoria": "Ristorante",
     "Indirizzo": "Viale Conseils des Commis 10",
     "Città": "Aosta",
     "Telefono": "3485475552",
@@ -291,7 +301,7 @@
   },
   {
     "Nome Locale": "Stazione di Servizio Esso",
-    "Categoria": "Autovetture ",
+    "Categoria": "Autovetture",
     "Indirizzo": "Corso Ivrea, 67",
     "Città": "Aosta.",
     "Telefono": "0165362686",
