@@ -1,1 +1,352 @@
-[]
+[
+  {
+    "Nome Locale": "AiA attrezzature per industria e Artigianato ",
+    "Categoria": "Utensileria",
+    "Indirizzo": "frazione Pont Suaz, 57",
+    "Città": "Charvensod ",
+    "Telefono": "016532204",
+    "Descrizione Sconto": "Sconto 10%",
+    "Sito Web": "https://www.facebook.com/share/1KX6BYqt2d/",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Biazzetti Davide",
+    "Categoria": "Fisioterapisti",
+    "Indirizzo": "",
+    "Città": "",
+    "Telefono": "3402537005",
+    "Descrizione Sconto": "Sconto 30% sulla prima seduta ",
+    "Sito Web": "https://www.instagram.com/davefreewaves?igsh=MTFmbjg2N2V6bTVqbQ==",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Centro Fitness Naturalia e Centro estetico Raggio di Sole di Nancy Raffa",
+    "Categoria": "Fitness",
+    "Indirizzo": "Regione Tzambarlet, 13",
+    "Città": "Aosta",
+    "Telefono": "3482223033",
+    "Descrizione Sconto": "Sconto 5% sui pacchetti fitness",
+    "Sito Web": "http://www.centrobenesserenaturalia-aosta.it/",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Centro abbronzante SunExpress",
+    "Categoria": "Estetica",
+    "Indirizzo": "Rue de la Maladière, 51",
+    "Città": "Saint Christophe ",
+    "Telefono": "0165525831",
+    "Descrizione Sconto": "Sconto 10%",
+    "Sito Web": "",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Contoz Carburanti",
+    "Categoria": "Autovetture",
+    "Indirizzo": "Via Circonvallazione Sud 53/55",
+    "Città": "Nus",
+    "Telefono": "0165767984",
+    "Descrizione Sconto": "Sconto 5% su ricarica tessera",
+    "Sito Web": "https://contozcombustibili.com",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Corolla Ambra",
+    "Categoria": "Osteopata",
+    "Indirizzo": "Via Laurent Martinet, 33",
+    "Città": "Aosta",
+    "Telefono": "3494325549",
+    "Descrizione Sconto": "Sconto 15% sulla prima seduta",
+    "Sito Web": "http://www.ambracorolla.com/",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Crisafi carrozzeria",
+    "Categoria": "Autovetture",
+    "Indirizzo": "Località Les Iles, 14,",
+    "Città": "Pollein",
+    "Telefono": "016553175",
+    "Descrizione Sconto": "Buono pulizia ",
+    "Sito Web": "https://www.carrozzeriacrisafiaosta.com/",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Da Col Alberto",
+    "Categoria": "Osteopata",
+    "Indirizzo": "",
+    "Città": "",
+    "Telefono": "3805406635",
+    "Descrizione Sconto": "",
+    "Sito Web": "",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Distort Corrado ",
+    "Categoria": "Massaggiatore",
+    "Indirizzo": "Via Cesare Battisti, 14",
+    "Città": "Aosta",
+    "Telefono": "3497023191",
+    "Descrizione Sconto": "Sconto 20%",
+    "Sito Web": "",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Doceo Performance Lab",
+    "Categoria": "Fisioterapisti",
+    "Indirizzo": "Via Esperanto, 2",
+    "Città": "Aosta",
+    "Telefono": "3475805756",
+    "Descrizione Sconto": "Sconto 20%(prima seduta) -10% ",
+    "Sito Web": "https://doceocenter.it/",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Domesport",
+    "Categoria": "Abbigliamento",
+    "Indirizzo": "Frazione Plan Felinaz, 29",
+    "Città": "Charvensod",
+    "Telefono": "3383006891",
+    "Descrizione Sconto": "",
+    "Sito Web": "https://domesport.it",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Enobar Romae",
+    "Categoria": "Bar",
+    "Indirizzo": "Via Edouard Aubert,28",
+    "Città": "Aosta",
+    "Telefono": "331727733",
+    "Descrizione Sconto": "",
+    "Sito Web": "https://www.facebook.com/enobaromaenzo/",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Emporio dell'Auto",
+    "Categoria": "Autovetture",
+    "Indirizzo": "Via Giuseppe Mazzini, 6",
+    "Città": "Aosta",
+    "Telefono": "016541051",
+    "Descrizione Sconto": "",
+    "Sito Web": "http://www.emporiodellautoaosta.com/",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Generali Assicurazioni",
+    "Categoria": "Servizi",
+    "Indirizzo": "Via festaz, 88",
+    "Città": "Aosta",
+    "Telefono": "016541002",
+    "Descrizione Sconto": "",
+    "Sito Web": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjQp_-lmf-SAxVx6wIHHXx0IQMQgU96BAghEAQ&url=https%3A%2F%2Fwww.generali.it%2Ftrova-agenzia%2F&usg=AOvVaw09SEKPKlPuHeyRHGn1QwVF&opi=89978449",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Glarey Irene",
+    "Categoria": "Massaggiatore",
+    "Indirizzo": "Località Grand Chemin 93",
+    "Città": "Saint Christophe",
+    "Telefono": "3452888224",
+    "Descrizione Sconto": "Sconto 20%",
+    "Sito Web": "https://setup.vda.it",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Gruppo IRV",
+    "Categoria": "Medicina",
+    "Indirizzo": "via Lino Binel, 34",
+    "Città": "Aosta",
+    "Telefono": "0165279898",
+    "Descrizione Sconto": "Sconto 10% per visita medico sportiva e per trattamenti fisioterapici:\nMassoterapia, Tecarterpia, Rieducazione Funzionale, Onde d'Urto minimo 3 sedute, Tens",
+    "Sito Web": "www.gruppoirv.it",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Il Grullaio - tigelle e gnocco fritto",
+    "Categoria": "Ristorante",
+    "Indirizzo": "Loc. Crestellaz",
+    "Città": "Donnas",
+    "Telefono": "3485654980-3466080428",
+    "Descrizione Sconto": "Sconto 10% su pranzi e cene",
+    "Sito Web": "",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "La Quercia 58",
+    "Categoria": "Svago",
+    "Indirizzo": "Località Zerbio, 1",
+    "Città": "Pontey",
+    "Telefono": "3517430017",
+    "Descrizione Sconto": "",
+    "Sito Web": "http://www.laquercia58.com/",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Le Chignon",
+    "Categoria": "Parrucchiera",
+    "Indirizzo": "Corso Lancieri di Aosta, 2",
+    "Città": "Aosta",
+    "Telefono": "3514032528",
+    "Descrizione Sconto": "Sconto 10% (>25 euro)",
+    "Sito Web": "https://www.facebook.com/p/Le-Chignon-Hair-Salon-61569385670977/",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Les Bières du Grand Saint Bernard ",
+    "Categoria": "Bevande ",
+    "Indirizzo": "località Croix Noire, 45",
+    "Città": "Saint Christophe ",
+    "Telefono": "",
+    "Descrizione Sconto": "Sconto 15% sull'acquisto di confezioni di birra da 12 bottiglie o 24 lattine c/o La Clavalité",
+    "Sito Web": "",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "L'Osteria",
+    "Categoria": "Ristorante",
+    "Indirizzo": "via Porta Pretoria, 13",
+    "Città": "Aosta",
+    "Telefono": "016540111",
+    "Descrizione Sconto": "Sconto 15%",
+    "Sito Web": "https://losteria.aosta.it/",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Macrì Giada",
+    "Categoria": "Nutrizionista",
+    "Indirizzo": "Frazione Borettaz 7",
+    "Città": "Gressan ",
+    "Telefono": "3791988503",
+    "Descrizione Sconto": "Sconto 1a seduta",
+    "Sito Web": "https://nutrizionistagiadamacri.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcAQSuk5leHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaeCSCn81YD5HB3BSvZH3xJxbQKd6_Ae4almx-SkNRCFh-g9uYlynNrZwdB7Xw_aem_BABnayMOnxJP2exbBV6RhA",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Macrì Francesco",
+    "Categoria": "Nutrizionista",
+    "Indirizzo": "Corso Saint Martin de Corléans",
+    "Città": "Aosta",
+    "Telefono": "3791214577",
+    "Descrizione Sconto": "Sconto 20%",
+    "Sito Web": "www.dottfrancescomacri.it",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Ottica Rosa",
+    "Categoria": "Ottico",
+    "Indirizzo": "Via Avenue du Conseil des Commis n. 7",
+    "Città": "Aosta",
+    "Telefono": "016544416",
+    "Descrizione Sconto": "Sconto 20% su occhiali sportivi ",
+    "Sito Web": "https://www.otticarosa.com/",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Palestra Disval",
+    "Categoria": "Fitness",
+    "Indirizzo": "Via Maurice Garin, 1",
+    "Città": "Aosta",
+    "Telefono": "0165 548151",
+    "Descrizione Sconto": "5 giorni in più sul mese",
+    "Sito Web": "http://www.disval.it/",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Parrucchiera Sabrina",
+    "Categoria": "Parrucchiera",
+    "Indirizzo": "Corso battaglione Aosta, 191",
+    "Città": "Aosta",
+    "Telefono": "3667461796",
+    "Descrizione Sconto": "",
+    "Sito Web": "https://www.facebook.com/parrucchiera.bidesesabrina/?ref=bookmarks",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Perret Jean Paul",
+    "Categoria": "Nutrizionista",
+    "Indirizzo": "Località Grand Chemin, 93",
+    "Città": "Saint Christophe ",
+    "Telefono": "3408836130",
+    "Descrizione Sconto": "Sconto 20%",
+    "Sito Web": "https://noritura.com/",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Pinelli Ilaria",
+    "Categoria": "Osteopata",
+    "Indirizzo": "Corso Lancieri di Aosta, 2/L",
+    "Città": "Aosta",
+    "Telefono": "3494371276",
+    "Descrizione Sconto": "Sconto 20% su prima seduta",
+    "Sito Web": "https://linktr.ee/ilariapinelli?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcAQntS5leHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAae1bI-o6Ao0xoeC_y__2g1rb348FoVJhvDoRCZMsjYU6Ox5SE8CiGH4F_oA0g_aem_QgegNwvTkkW1ijJrI7EdTg",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Piscina di Variney",
+    "Categoria": "Sport",
+    "Indirizzo": "Località frazione chez Roncoz",
+    "Città": "Gignod",
+    "Telefono": "0165238299",
+    "Descrizione Sconto": "Sconto ingresso del 15% non cumulabile con altre promo",
+    "Sito Web": "https://www.piscinavariney.it/",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Profumeria Pivot",
+    "Categoria": "Profumeria ",
+    "Indirizzo": "via de Tillier, 24",
+    "Città": "Aosta",
+    "Telefono": "016535774",
+    "Descrizione Sconto": "Sconto 10% con 25€ di spesa",
+    "Sito Web": "",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Roshi House",
+    "Categoria": "Ristorante",
+    "Indirizzo": "Viale Conseils des Commis 10",
+    "Città": "Aosta",
+    "Telefono": "3485475552",
+    "Descrizione Sconto": "Sconto 10% il martedì sera",
+    "Sito Web": "https://roshihouse.com/",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Stazione di Servizio Esso",
+    "Categoria": "Autovetture",
+    "Indirizzo": "Corso Ivrea, 67",
+    "Città": "Aosta.",
+    "Telefono": "0165362686",
+    "Descrizione Sconto": "Sconto 10% su manutenzione e gomme",
+    "Sito Web": "",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Technosport",
+    "Categoria": "Abbigliamento",
+    "Indirizzo": "Plan Felinaz, 19, 11020",
+    "Città": "Charvensod",
+    "Telefono": "0165 32829",
+    "Descrizione Sconto": "Sconto 20%",
+    "Sito Web": "https://www.facebook.com/technosport.articoli.sportivi/?locale=it_IT",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Veglio Stefano",
+    "Categoria": "Dermatologo",
+    "Indirizzo": "Rue de la Maladière, 31",
+    "Città": "Saint Christophe",
+    "Telefono": "3355734986",
+    "Descrizione Sconto": "Sconto 10% su Crioterapia",
+    "Sito Web": "https://stefanoveglio.com/",
+    "Attivo": "SI"
+  },
+  {
+    "Nome Locale": "Yogorino Aosta",
+    "Categoria": "Alimenti",
+    "Indirizzo": "Via Hotel des Etats, 1",
+    "Città": "Aosta",
+    "Telefono": "",
+    "Descrizione Sconto": "Sconto 25% su spesa minima di 25€",
+    "Sito Web": "www.facebook.com/yogorinoaosta",
+    "Attivo": "SI"
+  }
+]
